@@ -6,7 +6,7 @@ console.log(galleryItems);
 const galleryContainerEl = document.querySelector('div.gallery');
 const imagesMarcup = createGalleryImgMarcup(galleryItems);
 
-galleryContainerEl.insertAdjacentHTML('afterbegin', imagesMarcup);
+galleryContainerEl.insertAdjacentHTML('beforeend', imagesMarcup);
 
 galleryContainerEl.addEventListener('click', onGalleryContainerClick);
 

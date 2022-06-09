@@ -8,8 +8,6 @@ const imagesMarcup = createGalleryImgMarcup(galleryItems);
 
 galleryContainerEl.innerHTML = imagesMarcup;
 
-// galleryContainerEl.addEventListener('click', onGalleryContainerClick);
-
 function createGalleryImgMarcup(images) {
     return images.map(({ preview, original, description }) => {
         return `
@@ -25,3 +23,5 @@ function createGalleryImgMarcup(images) {
         .join('');
     }
 
+const lightbox = new SimpleLightbox(".gallery a", { captionsData: "alt", captionDelay: 250, });
+console.log(lightbox);
